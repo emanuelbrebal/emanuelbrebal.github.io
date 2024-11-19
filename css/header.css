@@ -1,0 +1,55 @@
+.navbar {
+    border: none;
+}
+
+ul.navbar-itens,
+.navbar-brand {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar-brand:hover, .btn-primary:hover{
+    transform: scale(1.08);
+}
+
+.navbar-brand, button{
+    transition: transform 0.4s cubic-bezier(0.45, 0.97, 0.68, 2.48);
+}
+
+
+.navbar-itens li a {
+    float: right;
+}
+
+.navbar-itens a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    height: 75px;
+    line-height: 45px;
+}
+
+.btn-primary {
+    background-color: rgb(167, 43, 43);
+    border: none;
+    box-shadow: 2px 2px 1px black;
+    padding: 10px;
+    
+}
+
+.btn-primary:hover{
+    background-color: rgb(167, 43, 43);
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+#card-profile img{
+    max-width: 400px;
+    max-height: 400px;
+}
