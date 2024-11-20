@@ -19,12 +19,15 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/body.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css//components/header.css">
+    <link rel="stylesheet" href="./css/components/button.css">
+    <link rel="stylesheet" href="./css/components/body.css">
+
+
 </head>
 
 <body>
+    <script src="./js/main.js"></script>
     <header>
         <nav class="navbar">
             <ul class="navbar-itens">
@@ -35,24 +38,36 @@
                 <li><a href="#" lang="en">Skills</a></li>
                 <li><a href="#">Sobre</a></li>
             </ul>
-
         </nav>
     </header>
 
     <main>
-        </div>
-        <div class="card" id="card-profile">
-            <img src="./assets/img/profilepicture.jpg" alt="Emanuel Victor Brebal" class="card-img-top">
-            <div class="card-body">
-                <h1>Emanuel Victor</h1>
-                <h2><em lang="en">FullStack Developer</em></h2>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
+        <!-- ABA SOBRE -->
+        <div class="container d-flex justify-content-center align-items-center min-vh-100" id="card-main">
+            <div class="card" style="width: 35rem;"> <!-- Card menor -->
+                <img src="assets/img/profilepicture.jpg" class="card-img-top" id="card-main" alt="Emanuel Victor">
+                <div class="card-body text-center" id="texto-sobre-mim">
+                    <h1 class="card-title fs-4">Emanuel Victor Brebal</h1>
+                    <h2 class="card-subtitle text-muted fs-5"><em lang="en">FullStack Developer</em></h2>
+                    <p class="card-text mt-3">
+                        Sou um desenvolvedor FullStack apaixonado por tecnologia e inovação. Com experiência em
+                        projetos web e soluções empresariais, trago ideias à vida com eficiência e
+                        criatividade.
+                    </p>
+                    <button class="btn btn-primary"><strong>CONHEÇA O DEV</strong></button>
+                </div>
             </div>
         </div>
 
+        
+        <!-- AQUI TERÁ UM CARROSSEL COM CARTÕES COM OS ICONS DAS TECNOLOGIAS + UM TEXTO -->
+
+        <!-- ABA PROJETOS -->
+
+        <!-- ABA CONTATOS -->
+        <div class="container d-flex justify-content-center w-100 min-vh-100">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe, eaque, itaque earum assumenda tempore unde dolore, architecto odit accusamus dolores praesentium facilis numquam nemo sequi reiciendis rerum excepturi doloribus.
+        </div>
 
     </main>
 

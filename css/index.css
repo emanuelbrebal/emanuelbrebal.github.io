@@ -3,3 +3,7 @@
     margin: 0 auto;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 5rem);
+}
