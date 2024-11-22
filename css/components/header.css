@@ -1,5 +1,6 @@
 .navbar {
     border: none;
+    margin: 0;
 }
 
 ul.navbar-itens,
@@ -7,6 +8,11 @@ ul.navbar-itens,
     list-style-type: none;
     overflow: hidden;
     background-color: #333;
+    margin-bottom: 0;
+}
+
+ul.navbar-itens{
+    box-shadow: 0px 3px 12px 2px rgb(0, 0, 0) !important;
 }
 
 .navbar-brand:hover {
@@ -26,18 +32,9 @@ ul.navbar-itens,
     font-size: 20px;
     height: 75px;
     line-height: 45px;
+    
 }
-
 
 li a:hover {
     background-color: #111;
-}
-
-/* BOTAO DOWNLOAD CV */
-
-img#card-main{
-    height: 45rem; 
-    width: 35rem; 
-    border-radius: 10px;
-    box-shadow: 1px 1px 0px 5px #fff;
 }

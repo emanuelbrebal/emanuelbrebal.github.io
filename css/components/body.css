@@ -5,11 +5,40 @@ body {
 
 }
 
-#texto-sobre-mim {
+#texto-sobre-mim, .imagem-sobre img {
     color: #fff;
-    padding: 0.8rem;
-    background-color: #333;
+    padding: 0.2rem;
+    background-color: #3b3b3b;
     border-radius: 10px;
     box-shadow: 0px 8px 10px 0.5px rgb(167, 43, 43);
 
+}
+
+.imagem-sobre{
+    height: 400px;
+}
+
+div#painel-sobre{
+    padding: 4rem 0rem;
+    width: 100%;
+    background-color: #888888;
+}
+
+img#card-main{
+    height: 100%;
+}
+
+.col-md-6{
+    width: 45%;
+}
+
+aside#texto-sobre-mim{
+    align-self: center;
+    margin-top: 6rem;
+    margin-right: 0.5rem;
+    max-width: 600px;
+}
+
+h2.card-subtitle{
+    margin-top: 10px;;
 }
