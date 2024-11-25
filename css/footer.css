@@ -4,6 +4,7 @@ footer div#footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5rem;
 }
 
 #footer-imgs{
@@ -14,5 +15,6 @@ footer div#footer{
 div#footer img{
     max-height: 40px;
     justify-content: space-evenly;
+    box-shadow: 1px 1px 1px #fff;
 
 }

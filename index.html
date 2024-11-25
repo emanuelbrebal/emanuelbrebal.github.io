@@ -36,8 +36,8 @@
                 <li><a href="#"><button class="btn btn-primary" lang="en">Download CV</button></a></li>
                 <li><a href="#">Contatos</a></li>
                 <li><a href="#">Projetos</a></li>
-                <li><a href="#" lang="en">Skills</a></li>
-                <li><a href="#texto-sobre-mim">Sobre</a></li>
+                <li><a href="#minhasSkills" lang="en">Skills</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
             </ul>
         </nav>
     </header>
@@ -45,6 +45,7 @@
     <main>
         <!-- ABA SOBRE -->
         <section class="container d-flex align-items-center justify-content-between" id="painel-sobre">
+            <h1 id="Sobre">Conheça o desenvolvedor: </h1>
             <!-- Primeira Coluna -->
             <section class="col-md-6 text-center imagem-sobre">
                 <img src="assets/img/profilepicture.jpg" id="card-main" alt="Emanuel Victor">
@@ -52,74 +53,79 @@
 
             <!-- Segunda Coluna -->
             <aside class="col-md-6 text-center align-items-center" id="texto-sobre-mim">
-                <h1 class="card-title fs-4">Emanuel Victor Brebal</h1>
-                <h2 class="card-subtitle text-muted fs-5"><em lang="en">FullStack Developer</em></h2>
-                <p class="card-text mt-3">
-                    Sou um desenvolvedor FullStack apaixonado por tecnologia e inovação.
-                    <br>
-                    Com experiência em
-                    projetos web e soluções empresariais, trago ideias à vida com eficiência e
-                    criatividade.
-                </p>
-                <p class="card-text mt-3">
-                    Sou um desenvolvedor FullStack apaixonado por tecnologia e inovação. Com experiência em
-                    projetos web e soluções empresariais, trago ideias à vida com eficiência e
-                    criatividade.
-                </p>
-                <button class="btn btn-primary"><strong>CONHEÇA O DEV</strong></button>
+                <div>
+                    <h1 class="card-title fs-4">Emanuel Victor Brebal</h1>
+                    <h2 class="card-subtitle text-muted fs-5"><em lang="en">FullStack Developer</em></h2>
+                    <p class="card-text mt-3">
+                        Sou um desenvolvedor FullStack apaixonado por tecnologia e inovação. Adoro transformar ideias em
+                        soluções eficientes e intuitivas, sempre buscando unir criatividade e funcionalidade.
+                        <br>
+                        Além disso, no tenho um grande
+                        interesse em jogos e, no meu tempo livre, estou explorando o universo da criação com a Godot 4
+                    </p>
+
+                    <button class="btn btn-primary mt-10"><strong><a href="#">SAIBA MAIS</a></strong></button>
+                </div>
             </aside>
         </section>
 
 
 
         <!-- ABA SKILLS: AQUI TERÁ UM CARROSSEL COM CARTÕES COM OS ICONS DAS TECNOLOGIAS + UM TEXTO -->
+        <h1 id="minhasSkills">Minhas Skills:</h1>
         <section class="align-items-center" id="painel-skills">
             <div class="card">
-                    <img src="./assets/img/htmlcssjs.png" class="card-img-top" alt="HTML5 + CSS3 + JS">
-                    <div class="card-body">
-                        <h5 class="card-title">HTML5, CSS3 e Javascript</h5>
-                        <p class="card-text"> A tríade do desenvolvimento WEB. Ter um domínio sobre essas tecnologias
-                            tão fundamentais é necessário nos dias de hoje.</p>
-                    </div>
+                <img src="./assets/img/htmlcssjs.png" class="card-img-top" alt="HTML5 + CSS3 + JS">
+                <div class="card-body">
+                    <h5 class="card-title">HTML5, CSS3 e Javascript</h5>
+                    <p class="card-text"> A tríade do desenvolvimento WEB. <br> Ter um domínio sobre essas tecnologias
+                        tão fundamentais é necessário nos dias de hoje.</p>
+                </div>
             </div>
             <div class="card">
                 <img src="./assets/img/PHP-logo.svg.png" class="card-img-top" alt="PHP">
                 <div class="card-body">
                     <h5 class="card-title">PHP</h5>
-                    <p class="card-text"><em>PHP HYPERTEXT PREPROCESSOR</em>, é considerada</p>
+                    <p class="card-text">PHP é uma linguagem de programação
+                        amplamente usada para o desenvolvimento de aplicações web dinâmicas. É conhecida por sua
+                        simplicidade, flexibilidade e integração com bancos de dados.</p>
                 </div>
             </div>
             <div class="card">
                 <img src="./assets/img/laravel.png" class="card-img-top" alt="LARAVEL">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h5 class="card-title">LARAVEL</h5>
+                    <p class="card-text">Laravel é um framework PHP que simplifica o desenvolvimento web com uma
+                        abordagem elegante e ferramentas robustas, como autenticação, rotas e acesso a bancos de dados.
+                    </p>
                 </div>
             </div>
             <div class="card">
                 <img src="./assets/img/postgresql.png" class="card-img-top" alt="HTML5 + CSS3 + JS">
                 <div class="card-body">
-                    <h5 class="card-title">HTML5, CSS3 e Javascript</h5>
-                    <p class="card-text"> A tríade do desenvolvimento WEB. Ter um domínio sobre essas tecnologias
-                        tão fundamentais é necessário nos dias de hoje.</p>
+                    <h5 class="card-title">POSTGRESQL</h5>
+                    <p class="card-text"> PostgreSQL é um banco de dados relacional avançado e de código aberto.
+                        Reconhecido por sua confiabilidade e suporte a recursos modernos, é ideal para aplicações de
+                        alta complexidade.</p>
                 </div>
-        </div>
-        <div class="card">
-            <img src="./assets/img/godot.png" class="card-img-top" alt="PHP">
-            <div class="card-body">
-                <h5 class="card-title">PHP</h5>
-                <p class="card-text"><em>PHP HYPERTEXT PREPROCESSOR</em>, é considerada</p>
             </div>
-        </div>
-        <div class="card">
-            <img src="./assets/img/laravel.png" class="card-img-top" alt="LARAVEL">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+            <div class="card">
+                <img src="./assets/img/bootstrap.png" class="card-img-top" alt="LARAVEL">
+                <div class="card-body">
+                    <h5 class="card-title">BOOTSTRAP</h5>
+                    <p class="card-text">Bootstrap é um framework CSS que facilita a criação de sites responsivos e
+                        modernos, oferecendo componentes prontos e uma base sólida para design front-end.</p>
+                </div>
             </div>
-        </div>
+            <div class="card">
+                <img src="./assets/img/godot.png" class="card-img-top" alt="PHP">
+                <div class="card-body">
+                    <h5 class="card-title">GODOT 4</h5>
+                    <p class="card-text">Godot é um engine de desenvolvimento de jogos 2D e 3D, poderoso e de código
+                        aberto. <br> Ele oferece uma interface intuitiva e ferramentas flexíveis para criar experiências
+                        interativas.</p>
+                </div>
+            </div>
 
 
 
@@ -138,11 +144,12 @@
                 <h3>Você também me encontra aqui:</h3>
             </div>
             <div id="footer-imgs">
-                <a href="https://www.instagram.com/manu.brebal/"><img src="./assets/img/Instagram_logo_2016.svg.webp"
+                <a href="https://www.instagram.com/manu.brebal/" target="_blank"><img src="./assets/img/Instagram_logo_2016.svg.webp"
                         alt="Instagram"></a></img>
-                <a href="https://github.com/emanuelbrebal"><img src="./assets/img/github.png" alt="Github"></a></img>
-                <a href="https://www.linkedin.com/in/emanuel-victor-brebal/"><img
-                        src="./assets/img/linkedin-logo-computer-icons-business-png-favpng-w5YjZLCyfwJ6gt6UrmpxCf916-removebg-preview.png" alt="LinkedIn"></a></img>
+                <a href="https://github.com/emanuelbrebal" target="_blank"><img src="./assets/img/github.png" alt="Github"></a></img>
+                <a href="https://www.linkedin.com/in/emanuel-victor-brebal/" target="_blank"><img
+                        src="./assets/img/linkedin-logo-computer-icons-business-png-favpng-w5YjZLCyfwJ6gt6UrmpxCf916-removebg-preview.png"
+                        alt="LinkedIn"></a></img>
             </div>
         </div>
     </footer>

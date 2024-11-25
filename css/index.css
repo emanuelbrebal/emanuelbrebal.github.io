@@ -13,3 +13,29 @@ html, body {
     padding: 0;
     height: 100%; /* Garante que o body ocupe toda a altura da janela */
 }
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+h1{
+    margin: 0px 0px 20px 20px;
+    /* text-shadow: -1px 2px 1px #000000; */
+    /* text-decoration: underline #ffffff 21px; */
+}
+
+h1#Sobre{
+    color: #fff;
+
+}
+
+h1#minhasSkills{
+    color: #fff;
+    margin-top: 5rem;
+}
