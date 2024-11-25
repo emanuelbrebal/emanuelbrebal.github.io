@@ -5,6 +5,7 @@
     box-shadow: 2px 2px 1px black;
     padding: 10px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin: 10px;
 }
 
 .btn-primary:hover{

@@ -14,7 +14,7 @@ body {
     box-shadow: 0px 8px 10px 0.5px rgb(167, 43, 43);
 }
 
-#texto-sobre-mim{
+#texto-sobre-mim {
     height: 300px;
     align-items: center;
 }
@@ -23,10 +23,11 @@ body {
     height: 500px;
 }
 
-section#painel-sobre {
+#painel-sobre {
     padding: 4rem 0rem;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    display: block;
     background-color: #888888;
 
 }
@@ -40,6 +41,7 @@ img#card-main {
 }
 
 aside#texto-sobre-mim {
+
     align-self: center;
     margin-top: 6rem;
     margin-right: 0.5rem;
@@ -59,14 +61,15 @@ h2.card-subtitle {
 }
 
 img.card-img-top {
+    max-width: 35rem;
     max-height: 157px;
     object-fit: contain;
 }
 
 .card-body {
-    min-height: 20rem;
-    max-height: 20rem;
-    max-width: 30rem;
+    margin: 0;
+    min-height: 55%;
+    max-width: 35rem;
     color: white;
     background-color: #888888;
     padding: 10px;
@@ -76,17 +79,150 @@ img.card-img-top {
 
 section#painel-skills {
     margin-top: 7rem;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+    justify-content: center;
 }
 
-.card-body p.card-text, .card-body h5.card-title{
+.card-body p.card-text,
+.card-body h5.card-title {
     font-size: medium;
     text-shadow: -1px 2px 1px #000000;
 }
-/* 
+
 div.card{
-    max-width: 400px;
-} */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-sm {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-items: center;
+    background-color: #333;
+
+}
+
+.painel-me {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media(max-width: 576px) {
+    #nav-g {
+        display: none;
+    }
+
+    #nav-sm {
+        display: grid;
+    }
+
+
+    a.navbar-brand {
+        margin: 0 auto;
+    }
+
+    button#download-cv-button {
+        align-items: end;
+    }
+
+    section#painel-skills {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem;
+    }
+
+    #card-main {
+        max-height: 283px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+
+    aside#texto-sobre-mim {
+        margin: 0 auto;
+        margin-top: 2rem;
+        max-width: 85%;
+        height: fit-content;
+    }
+
+    .card-body{
+        min-height: 55%;
+    }
+}
+
+@media(min-width : 577px) and (max-width: 844px) {
+    #nav-g {
+        display: none;
+    }
+
+    section#painel-skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    section#painel-skills .card{
+        margin: 1rem;
+        height: 100%;
+    }
+    
+    #painel-sobre{
+        min-height: 120vh;
+    }
+
+    #card-main {
+        max-height: 350px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    aside#texto-sobre-mim {
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 90%;
+        height: fit-content;
+    }
+}
+
+@media(min-width: 845px) and (max-width: 991px) {
+    #nav-sm{
+        display: none;
+    }
+
+    .card{
+        height: 100%;
+        margin: 0px 1rem;
+    }
+
+    section#painel-skills {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        
+    }
+
+}
+
+@media (min-width: 991px) {
+    #nav-sm{
+        display: none;
+    }
+
+    .painel-me{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .col-md-6{
+        width: 50%;
+    }
+}

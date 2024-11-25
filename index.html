@@ -24,13 +24,15 @@
     <link rel="stylesheet" href="./css/components/body.css">
     <link rel="stylesheet" href="./css/footer.css">
 
+    <link rel="shortcut icon" href="./assets/img/web-developer-concept-technology-icons-260nw-341610053.webp"
+        type="image/x-icon">
 
 </head>
 
 <body>
     <script src="./js/main.js"></script>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="nav-g">
             <ul class="navbar-itens">
                 <a href="#" class="navbar-brand">Portfolio de Desenvolvedor</a>
                 <li><a href="#"><button class="btn btn-primary" lang="en">Download CV</button></a></li>
@@ -40,46 +42,65 @@
                 <li><a href="#Sobre">Sobre</a></li>
             </ul>
         </nav>
+        <nav class="navbar" id="nav-sm">
+            <a href="#" class="navbar-brand">Portfolio de Desenvolvedor</a>
+            <button class="btn btn-primary" id="download-cv-button" lang="en">Download CV</button>
+
+        </nav>
     </header>
 
     <main>
         <!-- ABA SOBRE -->
-        <section class="container d-flex align-items-center justify-content-between" id="painel-sobre">
+        <article class="container d-flex align-items-center justify-content-between" id="painel-sobre">
             <h1 id="Sobre">Conheça o desenvolvedor: </h1>
             <!-- Primeira Coluna -->
-            <section class="col-md-6 text-center imagem-sobre">
-                <img src="assets/img/profilepicture.jpg" id="card-main" alt="Emanuel Victor">
-            </section>
+            <div class="painel-me">
+                <section class="col-md-6 text-center imagem-sobre">
+                    <img src="assets/img/profilepicture.jpg" id="card-main" alt="Emanuel Victor">
 
-            <!-- Segunda Coluna -->
-            <aside class="col-md-6 text-center align-items-center" id="texto-sobre-mim">
-                <div>
-                    <h1 class="card-title fs-4">Emanuel Victor Brebal</h1>
-                    <h2 class="card-subtitle text-muted fs-5"><em lang="en">FullStack Developer</em></h2>
-                    <p class="card-text mt-3">
-                        Sou um desenvolvedor FullStack apaixonado por tecnologia e inovação. Adoro transformar ideias em
-                        soluções eficientes e intuitivas, sempre buscando unir criatividade e funcionalidade.
-                        <br>
-                        Além disso, no tenho um grande
-                        interesse em jogos e, no meu tempo livre, estou explorando o universo da criação com a Godot 4
-                    </p>
-
-                    <button class="btn btn-primary mt-10"><strong><a href="#">SAIBA MAIS</a></strong></button>
-                </div>
-            </aside>
-        </section>
+                    <!-- Segunda Coluna -->
+                </section>
+                <aside class="col-md-6 text-center align-items-center" id="texto-sobre-mim">
+                    <div>
+                        <h1 class="card-title fs-4">Emanuel Victor Brebal</h1>
+                        <h2 class="card-subtitle text-muted fs-5"><em lang="en">FullStack Developer</em></h2>
+                        <p class="card-text mt-3">
+                            Sou um desenvolvedor FullStack apaixonado por tecnologia e inovação. Adoro transformar
+                            ideias em
+                            soluções eficientes e intuitivas, sempre buscando unir criatividade e funcionalidade.
+                            <br>
+                            Tenho experiência com atendimento ao público, suporte e manutenção de computadores e
+                            <br>
+                            Além disso, no tenho um grande
+                            interesse em jogos e, no meu tempo livre, estou explorando o universo da criação com a
+                            Godot 4.
+                        </p>
+                        <button class="btn btn-primary mt-10"><strong><a href="#minhasSkills">SAIBA
+                                    MAIS</a></strong></button>
+                    </div>
+                </aside>
+            </div>
+        </article>
 
 
 
         <!-- ABA SKILLS: AQUI TERÁ UM CARROSSEL COM CARTÕES COM OS ICONS DAS TECNOLOGIAS + UM TEXTO -->
         <h1 id="minhasSkills">Minhas Skills:</h1>
-        <section class="align-items-center" id="painel-skills">
+        <section class="grid-container" id="painel-skills">
             <div class="card">
                 <img src="./assets/img/htmlcssjs.png" class="card-img-top" alt="HTML5 + CSS3 + JS">
                 <div class="card-body">
                     <h5 class="card-title">HTML5, CSS3 e Javascript</h5>
                     <p class="card-text"> A tríade do desenvolvimento WEB. <br> Ter um domínio sobre essas tecnologias
                         tão fundamentais é necessário nos dias de hoje.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/bootstrap.png" class="card-img-top" alt="Bootstrap">
+                <div class="card-body">
+                    <h5 class="card-title">BOOTSTRAP</h5>
+                    <p class="card-text">Bootstrap é um framework CSS que facilita a criação de sites responsivos e
+                        modernos, oferecendo componentes prontos e uma base sólida para design front-end.</p>
                 </div>
             </div>
             <div class="card">
@@ -101,7 +122,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./assets/img/postgresql.png" class="card-img-top" alt="HTML5 + CSS3 + JS">
+                <img src="./assets/img/postgresql.png" class="card-img-top" alt="PostgreSQL">
                 <div class="card-body">
                     <h5 class="card-title">POSTGRESQL</h5>
                     <p class="card-text"> PostgreSQL é um banco de dados relacional avançado e de código aberto.
@@ -110,15 +131,17 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./assets/img/bootstrap.png" class="card-img-top" alt="LARAVEL">
+                <img src="./assets/img/github dark.png" class="card-img-top" alt="Github">
                 <div class="card-body">
-                    <h5 class="card-title">BOOTSTRAP</h5>
-                    <p class="card-text">Bootstrap é um framework CSS que facilita a criação de sites responsivos e
-                        modernos, oferecendo componentes prontos e uma base sólida para design front-end.</p>
+                    <h5 class="card-title">Github e GIT</h5>
+                    <p class="card-text">Git é um sistema de controle de versão que permite rastrear alterações no
+                        código e colaborar com outros desenvolvedores. <br> Já o GitHub é uma plataforma baseada em nuvem que
+                        hospeda repositórios Git, facilitando o compartilhamento, a revisão de código e o trabalho em
+                        equipe.</p>
                 </div>
             </div>
             <div class="card">
-                <img src="./assets/img/godot.png" class="card-img-top" alt="PHP">
+                <img src="./assets/img/godot.png" class="card-img-top" alt="Godot">
                 <div class="card-body">
                     <h5 class="card-title">GODOT 4</h5>
                     <p class="card-text">Godot é um engine de desenvolvimento de jogos 2D e 3D, poderoso e de código
@@ -126,6 +149,7 @@
                         interativas.</p>
                 </div>
             </div>
+
 
 
 
@@ -144,9 +168,10 @@
                 <h3>Você também me encontra aqui:</h3>
             </div>
             <div id="footer-imgs">
-                <a href="https://www.instagram.com/manu.brebal/" target="_blank"><img src="./assets/img/Instagram_logo_2016.svg.webp"
-                        alt="Instagram"></a></img>
-                <a href="https://github.com/emanuelbrebal" target="_blank"><img src="./assets/img/github.png" alt="Github"></a></img>
+                <a href="https://www.instagram.com/manu.brebal/" target="_blank"><img
+                        src="./assets/img/Instagram_logo_2016.svg.webp" alt="Instagram"></a></img>
+                <a href="https://github.com/emanuelbrebal" target="_blank"><img src="./assets/img/github.png"
+                        alt="Github"></a></img>
                 <a href="https://www.linkedin.com/in/emanuel-victor-brebal/" target="_blank"><img
                         src="./assets/img/linkedin-logo-computer-icons-business-png-favpng-w5YjZLCyfwJ6gt6UrmpxCf916-removebg-preview.png"
                         alt="LinkedIn"></a></img>
