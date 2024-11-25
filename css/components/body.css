@@ -5,7 +5,8 @@ body {
 
 }
 
-#texto-sobre-mim, .imagem-sobre img {
+#texto-sobre-mim,
+.imagem-sobre img {
     color: #fff;
     padding: 0.2rem;
     background-color: #3b3b3b;
@@ -14,31 +15,62 @@ body {
 
 }
 
-.imagem-sobre{
+.imagem-sobre {
     height: 400px;
 }
 
-div#painel-sobre{
+section#painel-sobre {
     padding: 4rem 0rem;
     width: 100%;
     background-color: #888888;
 }
 
-img#card-main{
+img#card-main {
     height: 100%;
 }
 
-.col-md-6{
+.col-md-6 {
     width: 45%;
 }
 
-aside#texto-sobre-mim{
+aside#texto-sobre-mim {
     align-self: center;
     margin-top: 6rem;
     margin-right: 0.5rem;
     max-width: 600px;
 }
 
-h2.card-subtitle{
-    margin-top: 10px;;
+h2.card-subtitle {
+    margin-top: 10px;
+}
+
+.card-img-top {
+    width: 100%;
+    background-color: #fff;
+    border: 0.5px dashed;
+    border-radius: 10px 10px 0px 0px;
+    padding: 1rem;
+}
+
+img.card-img-top {
+    max-height: 157px;
+    object-fit: contain;
+}
+
+.card-body {
+    min-height: 20rem;
+    max-width: 30rem;
+    color: white;
+    background-color: #888888;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 3px 3px 1px #212121;
+}
+
+section#painel-skills {
+    margin-top: 7rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 1rem;
 }
