@@ -7,3 +7,9 @@ html{
     scroll-behavior: smooth;
     scroll-padding: var(--scroll-padding, 5rem);
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Garante que o body ocupe toda a altura da janela */
+}

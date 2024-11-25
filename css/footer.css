@@ -1,0 +1,18 @@
+footer div#footer{
+    background-color: rgb(167, 43, 43);
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-imgs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div#footer img{
+    max-height: 40px;
+    justify-content: space-evenly;
+
+}
