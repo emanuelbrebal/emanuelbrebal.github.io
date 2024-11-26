@@ -11,12 +11,17 @@ body {
     padding: 0.5rem;
     background-color: #3b3b3b;
     border-radius: 10px;
-    box-shadow: 0px 8px 10px 0.5px rgb(167, 43, 43);
+    box-shadow: 0px 7px 10px 1px rgb(167, 43, 43);
 }
 
 #texto-sobre-mim {
     height: 300px;
     align-items: center;
+
+    p {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
 }
 
 .imagem-sobre {
@@ -66,9 +71,15 @@ img.card-img-top {
     object-fit: contain;
 }
 
+img.img-seplag {
+    background-color: #015daa;
+    object-fit: contain;
+}
+
 .card-body {
     margin: 0;
-    min-height: 55%;
+    min-height: fit-content;
+    height: 55%;
     max-width: 35rem;
     color: white;
     background-color: #888888;
@@ -78,12 +89,13 @@ img.card-img-top {
 }
 
 section#painel-skills {
-    margin-top: 7rem;
+    margin: 7rem 0rem;
     /* padding: 1.5rem; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     justify-content: center;
+
 }
 
 .card-body p.card-text,
@@ -92,7 +104,7 @@ section#painel-skills {
     text-shadow: -1px 2px 1px #000000;
 }
 
-div.card{
+div.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,6 +123,110 @@ div.card{
     display: grid;
     grid-template-columns: 1fr;
 }
+
+article#aba-experiencias {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: #888;
+
+}
+
+div.experiencias-profissionais {
+    margin: 0rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+div.barra-horizontal {
+    background-color: #000000;
+    width: 100%;
+    height: 3px;
+    margin: 0px;
+    padding: 0px;
+    align-self: center;
+}
+
+.exp-card {
+    border: 1px solid #000000;
+    border-radius: 1rem;
+    margin: 0px;
+    box-shadow: 0px 3px 3px 2px #212121;
+    margin-bottom: 10px;
+    max-width: 600px;
+    min-width: fit-content;
+}
+
+.texto-exp {
+    background-color: #50423a;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 0px;
+    font-weight: 400;
+}
+
+p#texto-tempo {
+    color: #000000;
+    font-weight: 500;
+}
+
+.p0 {
+    padding: 0px;
+}
+
+h1#EXP {
+    margin: 5rem 1rem;
+    color: #fff;
+}
+
+article#formulario-contato{
+    height: 100vh;
+    padding: 0;
+}
+
+h1#contato{
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+article#formulario-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+div.formulario-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #000000;
+    box-shadow: 4px 4px 10px 1px #000000;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding-top: 1rem;
+    width: 60vh;
+    height: fit-content;
+}
+
+form{
+    width: 90%;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+input.invalid, textarea.invalid {
+    border: 2px solid red;
+}
+input.valid, textarea.valid {
+    border: 2px solid green;
+}
+
 
 @media(max-width: 576px) {
     #nav-g {
@@ -131,14 +247,21 @@ div.card{
     }
 
     section#painel-skills {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding: 1rem;
+        gap: 1rem;
+        height: fit-content;
     }
 
     #card-main {
         max-height: 283px;
         max-width: 100%;
         object-fit: cover;
+    }
+
+    section.imagem-sobre {
+        height: fit-content;
+        margin-bottom: 2rem;
     }
 
     .col-md-6 {
@@ -148,14 +271,42 @@ div.card{
 
     aside#texto-sobre-mim {
         margin: 0 auto;
-        margin-top: 2rem;
         max-width: 85%;
         height: fit-content;
     }
 
-    .card-body{
-        min-height: 55%;
+    .card-body {
+        height: 55%;
     }
+
+    div.card {
+        height: 100%;
+    }
+
+    #aba-experiencias {
+        min-height: fit-content;
+    }
+
+    div.barra-horizontal {
+        display: none;
+    }
+
+    div.experiencias-profissionais {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    img.card-img-top {
+        max-height: 157px;
+        min-width: 100%;
+        object-fit: contain;
+    }
+
+    .exp-card{
+        width: fit-content;
+    }
+
+
 }
 
 @media(min-width : 577px) and (max-width: 844px) {
@@ -168,12 +319,12 @@ div.card{
         gap: 1rem;
     }
 
-    section#painel-skills .card{
+    section#painel-skills .card {
         margin: 1rem;
         height: 100%;
     }
-    
-    #painel-sobre{
+
+    #painel-sobre {
         min-height: 120vh;
     }
 
@@ -181,6 +332,11 @@ div.card{
         max-height: 350px;
         max-width: 100%;
         object-fit: cover;
+    }
+
+    section.imagem-sobre {
+        height: fit-content;
+        margin-bottom: 2rem;
     }
 
     .col-md-6 {
@@ -193,14 +349,48 @@ div.card{
         width: 90%;
         height: fit-content;
     }
-}
 
-@media(min-width: 845px) and (max-width: 991px) {
-    #nav-sm{
+    .card-body {
+        height: 55%;
+    }
+
+    div.card {
+        height: 100%;
+    }
+
+    #aba-experiencias {
+        min-height: fit-content;
+    }
+
+    div.barra-horizontal {
         display: none;
     }
 
-    .card{
+    div.experiencias-profissionais {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    img.card-img-top {
+        max-height: 157px;
+        width: 100%;
+        object-fit: contain;
+    }
+    .exp-card{
+        width: fit-content;
+        max-width: 600px;
+    }
+    .img-exp{
+        min-width: 100% !important;
+    }
+}
+
+@media(min-width: 845px) and (max-width: 991px) {
+    #nav-sm {
+        display: none;
+    }
+
+    .card {
         height: 100%;
         margin: 0px 1rem;
     }
@@ -208,21 +398,89 @@ div.card{
     section#painel-skills {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
-        
     }
 
-}
+    #card-main {
+        max-height: 350px;
+        max-width: 100%;
+        object-fit: cover;
+    }
 
-@media (min-width: 991px) {
-    #nav-sm{
+    section.imagem-sobre {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    aside#texto-sobre-mim {
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 90%;
+        height: fit-content;
+    } 
+
+    .card-body {
+        height: 55%;
+    }
+
+    div.card {
+        height: 100%;
+    }
+
+    #aba-experiencias {
+        min-height: fit-content;
+    }
+
+    div.barra-horizontal {
         display: none;
     }
 
-    .painel-me{
+    div.experiencias-profissionais {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    img.card-img-top {
+        max-height: 157px;
+        min-width: 100%;
+        object-fit: contain;
+    }
+    .exp-card{
+        width: fit-content;
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 991px) {
+    #nav-sm {
+        display: none;
+    }
+
+    .painel-me {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .col-md-6{
+
+    .col-md-6 {
         width: 50%;
     }
+
+    #card-main {
+        height: 95%;
+        max-width: 140%;
+        object-fit: cover;
+    }
+
+    aside#texto-sobre-mim {
+        margin: 0 auto;
+        width: 75%;
+        height: fit-content;
+    }
+
+    img.card-img-top {
+        max-height: 157px;
+        min-width: 100%;
+        max-width: 600px;
+        object-fit: contain;
+    }
+    
 }

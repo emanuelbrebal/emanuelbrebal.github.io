@@ -1,6 +1,6 @@
-
 footer div#footer{
     background-color: rgb(167, 43, 43);
+    color: #fff;
     min-height: 75px;
     display: flex;
     justify-content: space-between;
@@ -11,11 +11,16 @@ footer div#footer{
 #footer-imgs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 
 div#footer img{
-    max-height: 40px;
+    max-height: 35px;
     justify-content: space-evenly;
-    box-shadow: 1px 1px 1px #fff;
+}
 
+div#footer img:hover{
+    transform: scale(1.08);
+    filter: brightness(0.9);
+    transition: transform 0.3s ease, filter 0.3s ease;
 }

@@ -27,17 +27,19 @@
     <link rel="shortcut icon" href="./assets/img/web-developer-concept-technology-icons-260nw-341610053.webp"
         type="image/x-icon">
 
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
-    <script src="./js/main.js"></script>
     <header>
         <nav class="navbar" id="nav-g">
             <ul class="navbar-itens">
                 <a href="#" class="navbar-brand">Portfolio de Desenvolvedor</a>
-                <li><a href="#"><button class="btn btn-primary" lang="en">Download CV</button></a></li>
-                <li><a href="#">Contatos</a></li>
-                <li><a href="#">Projetos</a></li>
+                <li><a href="./assets/Currículo - Emanuel Victor de Melo Brebal.pdf"
+                        download="Currículo - Emanuel Victor de Melo Brebal.pdf"><button class="btn btn-primary"
+                            lang="en">Download CV</button></a></li>
+                <li><a href="#contato">Contatos</a></li>
+                <li><a href="#EXP">Experiências</a></li>
                 <li><a href="#minhasSkills" lang="en">Skills</a></li>
                 <li><a href="#Sobre">Sobre</a></li>
             </ul>
@@ -50,6 +52,7 @@
     </header>
 
     <main>
+        <div id="typingEffect"></div>
         <!-- ABA SOBRE -->
         <article class="container d-flex align-items-center justify-content-between" id="painel-sobre">
             <h1 id="Sobre">Conheça o desenvolvedor: </h1>
@@ -63,18 +66,31 @@
                 <aside class="col-md-6 text-center align-items-center" id="texto-sobre-mim">
                     <div>
                         <h1 class="card-title fs-4">Emanuel Victor Brebal</h1>
-                        <h2 class="card-subtitle text-muted fs-5"><em lang="en">FullStack Developer</em></h2>
+                        <h2 class="card-subtitle text-muted fs-5"><em lang="en">Técnico em Informática e <br>
+                                desenvolvedor WEB FullStack</em></h2>
+                        <h4><em>Quem sou eu?</em></h4>
                         <p class="card-text mt-3">
-                            Sou um desenvolvedor FullStack apaixonado por tecnologia e inovação. Adoro transformar
-                            ideias em
-                            soluções eficientes e intuitivas, sempre buscando unir criatividade e funcionalidade.
-                            <br>
-                            Tenho experiência com atendimento ao público, suporte e manutenção de computadores e
+                            Formado pelo Instituto Federal de Alagoas, no curso de Informática para a Internet.
+                            sou um desenvolvedor FullStack em formação apaixonado por tecnologia e inovação. <br> Minha
+                            função é
+                            transformar
+                            ideias em soluções eficientes e intuitivas, sempre buscando unir criatividade e
+                            funcionalidade.
+                        </p>
+                        <h4><em>O que aprendi?</em></h4>
+                        <p class="card-text mt-3">
+                            Pelo curso técnico e experiências profissionais anteriores, adquiri também conhecimentos
+                            sobre montagem
+                            e manutenção de computadores, redes de computadores, Git e Github, Pacote Office completo e
+                            algumas ferramentas de design como: Figma, Canva e Adobe Photoshop.
                             <br>
                             Além disso, no tenho um grande
-                            interesse em jogos e, no meu tempo livre, estou explorando o universo da criação com a
+                            interesse na área de desenvolvimento de jogos e, no meu tempo livre, estou explorando o
+                            universo da criação com a
                             Godot 4.
+
                         </p>
+
                         <button class="btn btn-primary mt-10"><strong><a href="#minhasSkills">SAIBA
                                     MAIS</a></strong></button>
                     </div>
@@ -135,9 +151,20 @@
                 <div class="card-body">
                     <h5 class="card-title">Github e GIT</h5>
                     <p class="card-text">Git é um sistema de controle de versão que permite rastrear alterações no
-                        código e colaborar com outros desenvolvedores. <br> Já o GitHub é uma plataforma baseada em nuvem que
+                        código e colaborar com outros desenvolvedores. <br> Já o GitHub é uma plataforma baseada em
+                        nuvem que
                         hospeda repositórios Git, facilitando o compartilhamento, a revisão de código e o trabalho em
                         equipe.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/Python-logo-notext.svg.png" class="card-img-top" alt="Python">
+                <div class="card-body">
+                    <h5 class="card-title">Python</h5>
+                    <p class="card-text">Python é uma linguagem de programação versátil, conhecida por sua simplicidade
+                        e legibilidade. Usada em áreas como desenvolvimento web, automação, ciência de dados e
+                        inteligência artificial, é ideal tanto para iniciantes quanto para desenvolvedores experientes.
+                    </p>
                 </div>
             </div>
             <div class="card">
@@ -149,16 +176,99 @@
                         interativas.</p>
                 </div>
             </div>
-
-
-
-
         </section>
 
-        <!-- ABA PROJETOS -->
+        <!-- ABA EXPERIÊNCIAS (aqui será uma grid mostrando minha trajetória profissional)-->
+        <article class="container" id="aba-experiencias">
+            <h1 id="EXP">Experiências profissionais:</h1>
+            <div class="container-grid experiencias-profissionais">
+                <div class="card">
+                    <h4>Suporte Técnico TI</h4>
+                    <div class="exp-card">
+                        <img class="card-img-top p0 img-exp" src="./assets/img/click_branco-removebg-preview.png"
+                            alt="Click Pizza Delivery">
+                        <p class="texto-exp">Atuando como suporte técnico da pizzaria, mantendo os computadores em
+                            funcionamento. <br>Também participo confeccionando artes para a empresa.
+                        </p>
+                    </div>
+                    <p id="texto-tempo">2019-atual</p>
+                </div>
+                <div class="barra-horizontal"></div>
+                <div class="card ">
+                    <h4>Trabalho Voluntário</h4>
+                    <div class="exp-card">
+                        <img class="card-img-top img-exp"
+                            src="./assets/img/Imagem_do_WhatsApp_de_2024-07-12_à_s__11.33.13_424e6dac-removebg-preview.png"
+                            alt="Casa da União Lar Mariana">
+                        <p class="texto-exp">Atuando como Presidente do Conselho Fiscal na Casa da União Lar Mariana,
+                            por um
+                            triênio iniciando em 2024.</p>
+                    </div>
+                    <p id="texto-tempo">2024 até 2027</p>
+                </div>
+                <div class="barra-horizontal"></div>
+                <div class="card">
+                    <h4>Estagiário</h4>
+                    <div class="exp-card">
+                        <img class="card-img-top p0 img-seplag img-exp" src="./assets/img/seplag.png"
+                            alt="Secretaria do Estado e Planejamento do Estado de Alagoas"
+                            id="seplag">
+                        <p class="texto-exp">Atualmente estou Estagiando na SEPLAG, como desenvolvedor WEB utilizando PHP e Laravel. <br> Participo do desenvolvimento de alguns sites para o estado!</p>
+                    </div>
+                    <p id="texto-tempo">2024-atual</p>
+                </div>
+                <div class="barra-horizontal"></div>
+                <div class="card">
+                    <h4>Sua Empresa!</h4>
+                    <div class="exp-card">
+                        <img class="card-img-top img-exp" src="./assets/img/portaicon.png"
+                        alt="Icone de uma pessoa entrando em uma porta">
+                        <p class="texto-exp">Estou a disposição e empolgado para ser mais uma ótima adição para compor a sua
+                            equipe de desenvolvimento!</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </article>
 
-        <!-- ABA CONTATOS -->
-
+        <!-- ABA CONTATOS (aqui será um formulário para contato, com validação JS) -->
+        <article class="container" id="formulario-contato">
+            <h1 id="contato" class="text-center">Gostou? Entre em contato:</h1>
+            <div class="container formulario-input">
+                <form id="formularioContato" method="post">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
+                        <span class="error" id="nameError"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Seu melhor e-mail" required>
+                        <span class="error" id="emailError"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="tel" class="form-control" id="telefone" placeholder="(DDD) 00000-0000" required>
+                        <span class="error" id="phoneError"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="empresa" class="form-label">Empresa:</label>
+                        <input type="text" class="form-control" id="empresa" placeholder="Nome da sua empresa">
+                        <span class="error" id="companyError"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem:</label>
+                        <textarea name="mensagem" class="form-control" id="mensagem" rows="4" placeholder="Digite aqui sua mensagem" required></textarea>
+                        <span class="error" id="messageError"></span>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+        
+        
 
     </main>
 
